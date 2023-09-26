@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin:0px;
+    padding:0px;
+    
+    
+}
+.text {
+    font-family: 'New Super Mario Font U', sans-serif;
+    margin-bottom: 0px;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top:10px;
+
+    
+}
+.mainbtn {
+    
+    position: relative;
+    margin-top:-20px;
+    padding-top: 0px;
+    left: 10px;
+    padding: 5px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 50px;
+}
+.space{
+    margin-right:15px;
+}
+.green {
+    color: green;
+}
+.blue {
+    color: blue;
+}
+.red {
+    color: red;
+}
+body {
+    background-image: url(../media/mariofundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    zoom:100%;
+}
+center {
+    margin-top: 0px;
+    margin-right: 20px;
+}

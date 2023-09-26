@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/belem.css">
+    <title>Pará</title>
+</head>
+<body>
+    <header>
+        <h1><a class="arrow"href="main.html">&larr;</a>       Pará<h1>
+    </header>
+    <main>
+        <section class="image-diary">
+            <div class="entry">
+                <img src="media/belem2.jpeg" alt="Entry 1">
+                <p class="caption">Aguardente de cana com caranguejo</p>
+            </div>
+            <div class="entry">
+                <img src="media/belem4.jpeg" alt="Entry 2">
+                <p class="caption">Açai com as melhores farinhas do mundo</p>
+            </div>
+            <div class="entry">
+                <img src="media/belem3.jpeg" alt="Entry 3">
+                <p class="caption">caminho para Ananindeua</p>
+            </div>
+            <div class="entry">
+                <img src="media/belem5.jpeg" alt="Entry 4">
+                <p class="caption">Peixe frito com açai no ver-o-peso</p>
+            </div>
+            <div class="entry">
+                <video id="vid1"src="media/vlog.mp4" alt="Entry 7" height="700px" controls > </video>
+                <p class="caption">Vlog</p>
+            </div>
+            <div class="entry">
+                <img src="media/belem7.jpeg" alt="Entry 6">
+                <p class="caption">Mosqueiro</p>
+            </div>
+           
+            
+        </section>
+    </main>
+    <script>
+        document.getElementById('vid1').addEventListener('loadedmetadata', function() {
+        this.currentTime =66;
+        }, false);
+    </script>
+    
+</body>
+</html>

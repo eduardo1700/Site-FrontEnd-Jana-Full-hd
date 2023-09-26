@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario</title>
+    <link href="https://fonts.cdnfonts.com/css/new-super-mario-font-u" rel="stylesheet">
+    <link rel="stylesheet" href="styles/mariocss.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <p>
+                <span class="green">P</span>
+                <span class="blue">r</span>
+                <span class="red">e</span>
+                <span class="green">s</span>
+                <span class="blue">s</span>
+                <span class="space"> </span>
+                <span class="green">M</span>
+                <span class="space"> </span>
+                <span class="red">t</span>
+                <span class="green">o</span>
+                <span class="space"> </span>
+                <span class="red">p</span>
+                <span class="green">l</span>
+                <span class="blue">a</span>
+                <span class="red">y</span>
+                <span class="space"> </span>
+                <span class="blue">o</span>
+                <span class="red">r</span>
+                <span class="space"> </span>
+                <span class="blue">m</span>
+                <span class="red">u</span>
+                <span class="green">t</span>
+                <span class="blue">e</span>
+                <span class="space"> </span>
+                <span class="green">t</span>
+                <span class="blue">h</span>
+                <span class="red">e</span>
+                <span class="space"> </span>
+                <span class="blue">m</span>
+                <span class="red">u</span>
+                <span class="green">s</span>
+                <span class="blue">i</span>
+                <span class="red">c</span>
+            </p>
+        </div>
+        <a href="main.html"><button class="mainbtn">Main</button></a>
+        <center>
+            
+            <iframe src="https://funhtml5games.com?embed=mario" style="width:670px;height:505px;border:none;" frameborder="0" scrolling="no"></iframe>
+        </center>
+    </div>
+    <audio id="bgAudio" src="media/mariobros.mp3" loop></audio>
+    
+    <script>
+        const bgAudio = document.getElementById('bgAudio');
+        let isAudioPlaying = false;
+
+        document.addEventListener('keydown', (event) => {
+            if (event.keyCode === 77) {
+                if (isAudioPlaying) {
+                    bgAudio.pause();
+                } else {
+                    bgAudio.play();
+                }
+                isAudioPlaying = !isAudioPlaying;
+            }
+        });
+    </script>
+</body>
+</html>

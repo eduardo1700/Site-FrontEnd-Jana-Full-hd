@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JanaMundi</title>
+    <link rel="stylesheet" href="styles/maincss.css">
+</head>
+<body>
+
+        
+
+        <div class="kittyDiv" id="kittyDiv">
+            <div id="textDiv" class="textDiv">
+                <p class="text" id="text1">OLA EU SOU A JANA</p>
+                <p class="text2" id="text2">nos olhos do dudu</p>
+            </div>
+            <button class="kitty" id="buttonKitty" onclick="hide()">
+                <img src="./media/kitty.png" class="kittyImg">
+            </button>
+        </div>
+
+        <div class="grid" id="grid">
+            <a data-href="mario.html"><img src="media/mario.jpg" class="gridImg"></a>
+            <a data-href="office.html"><img src="media/office.jpg" class="gridImg"></a>
+            <a data-href="belem.html"><img src="media/belemGrid.jpg" class="gridImg"></a>
+            <a data-href="yungLean.html"><img src="media/icetea.jpg" class="gridImg"></a>
+        </div>
+    
+        
+    
+    <video class="video" autoplay loop muted id="Video">
+        <source src="media/ayaTakanovid.mp4">
+    </video>
+
+   
+
+    <script>
+       function hide() {
+        var button = document.getElementById('buttonKitty');
+        var text = document.getElementById('textDiv');
+        var grid = document.getElementById('grid');
+        var gridImages = grid.getElementsByTagName('a'); 
+        var kittydiv = document.getElementById('kittyDiv');
+        setTimeout(function(){
+            
+            kittydiv.style.opacity = '0';
+            kittydiv.style.opacity = '0';
+        }, 200);
+
+        setTimeout(function () {
+            kittydiv.style.display = 'none';
+            grid.style.opacity = '1';
+
+            
+            for (var i = 0; i < gridImages.length; i++) {
+                gridImages[i].setAttribute('href', gridImages[i].getAttribute('data-href'));
+            }
+        }, 200);
+}
+
+    </script>
+</body>
+</html>

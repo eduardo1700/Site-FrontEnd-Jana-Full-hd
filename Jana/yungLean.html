@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yung Lean</title>
+    <link rel="stylesheet" href="styles/yungLean.css">
+</head>
+<body>
+    <container>
+        <a href="main.html"><img class="arizona" src="media/arizona.png"></a>
+        <h1 class="texto" id="texto">Press M for music</h1>
+    </container>
+    <video class="video" autoplay loop muted id="Video">
+        <source src="media/yungleanvid.mp4">
+    </video>
+    <audio id="bgAudio" src="media/gatorade.webm" loop></audio>
+    
+    
+</body>
+
+<script>
+    document.getElementById('Video').addEventListener('loadedmetadata', function() {
+        this.currentTime = 30;
+    }, false);
+
+    const bgAudio = document.getElementById('bgAudio');
+    let isAudioPlaying = false;
+
+
+    document.addEventListener('keydown', (event) => {
+        if (event.keyCode === 77) {
+            if (isAudioPlaying) {
+                bgAudio.pause();
+            } else {
+                bgAudio.play();
+            }
+            isAudioPlaying = !isAudioPlaying;
+        }
+    });
+
+
+</script>
+</html>

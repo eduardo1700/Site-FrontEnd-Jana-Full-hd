@@ -1,0 +1,26 @@
+body{
+    overflow: hidden;
+    position: inherit;
+}
+.texto{
+    position:absolute;
+    text-align: center;
+    color:white;
+    text-shadow: 
+    -2px -2px 0 #000, 
+    2px -2px 0 #000,  
+    -2px 2px 0 #000,  
+    2px 2px 0 #000;   
+
+}
+.arizona{
+    width: 200px;
+}
+.video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
